@@ -18,7 +18,29 @@
   echo $greeting . ' ' . $name;
   
   echo "Hello, $name";
+?>
+ 
+<h3>Car object:</h3>
+ 
+<?php
+  class Car {
+    function Car() {
+        $this->model = "VW";
+    }
+  }
 
+  // create an object
+  $herbie = new Car();
+
+  // show object properties
+  echo $herbie->model;
+?>
+<h2>Constant:</h2>
+<?php
+  //php constant variable:
+  define(number, 6);
+
+  echo number;
 ?>
 </body>
 </html>
