@@ -59,5 +59,12 @@ Resource
         code to be executed if n is different from all labels;
   }
   ```
-  
+### associative array is like an array of objects
+```
+$person = [
+  'age' => 33,
+  'name' => 'Matt',
+  'beard' => true
+];
+```
 

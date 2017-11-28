@@ -54,6 +54,9 @@
 
   //foreach
   $numArray = [3, 7, 18, 23, 99]; //can also use array(); like this: $numArray = array(6, 5, 3);
+
+  //push to array without key/value pairs
+  $numArray[] = 33;
   foreach($numArray as $value){
     echo "$value <br>";
   }
@@ -79,6 +82,27 @@
     //htmlspecialchars() function converts special characters to HTML entities to help prevent injecting malicious code
     "Hello, " . htmlspecialchars($_GET['name']); 
     require 'index.view.php';
+
+    $matthew = [
+      'age' => 33,
+      'name' => 'Matt',
+      'beard' => true
+    ];
+
+    //push to array
+    $matthew['height'] = 'five eleven';
+
+    //remove from array
+    // unset($matthew['age']);
+    
+    foreach($matthew as $feature => $val) {
+      echo "<strong>$feature</strong><li>$val</li>";
+    };
+    
+    //print current value of a variable
+    echo '<pre>';
+    var_dump($matthew);
+    echo '</pre>';
   ?>
 </h1>
 
