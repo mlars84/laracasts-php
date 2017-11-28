@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div>
@@ -12,12 +13,12 @@
 </div>
 <?php
 
-  $name = 'Matt Larson';
+  $matt = 'Matt Larson';
   $greeting = 'hello world!';
 
-  echo $greeting . ' ' . $name;
+  echo $greeting . ' ' . $matt;
   
-  echo "Hello, $name";
+  echo "Hello, $matt";
 ?>
  
 <h3>Car object:</h3>
@@ -51,7 +52,37 @@
     echo "The number is: $x <br>";
     $x++;
   }
+
+  echo "<h3>For Loop:</h3>";
+
+  //for
+  for($y = 0; $y <= 20; $y++ ) {
+    echo "$y <br>";
+  }
+
+  echo "<h3>foreach:</h3>";
+
+  //foreach
+  $numArray = array(3, 7, 18, 23, 99);   
+  foreach($numArray as $value){
+    echo "$value <br>";
+  }
    
+  echo "<h3>functions:</h3>";
+
+  function someFunc($one, $two) {
+    echo "$one . $two";
+  }
+
+  someFunc('first arge', 'second arg');
+
+  echo "<hr>";
+
+  //super global variable to get value from url params
+  $name = $_GET['name'];
+
+  echo "Hello <h2>$name</h2>";
+  
 ?>
 </body>
 </html>
