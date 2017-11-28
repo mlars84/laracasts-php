@@ -42,5 +42,16 @@
 
   echo number;
 ?>
+<hr>
+<?php
+  //while loop
+  $x = 10; 
+  
+  while($x <= 20) {
+    echo "The number is: $x <br>";
+    $x++;
+  }
+   
+?>
 </body>
 </html>
