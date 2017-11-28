@@ -9,5 +9,11 @@
 </head>
 <body>
     <?= "Hello <h2>$name</h2>"; ?>    
+    <?php 
+        $animals = ['cat', 'dog', 'bird'];
+        foreach($animals as $animal) {
+            echo "<li>$animal</li>";
+        }
+    ?>
 </body>
 </html>

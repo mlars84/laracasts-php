@@ -53,7 +53,7 @@
   echo "<h3>foreach:</h3>";
 
   //foreach
-  $numArray = array(3, 7, 18, 23, 99);   
+  $numArray = [3, 7, 18, 23, 99]; //can also use array(); like this: $numArray = array(6, 5, 3);
   foreach($numArray as $value){
     echo "$value <br>";
   }
