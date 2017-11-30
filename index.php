@@ -110,18 +110,33 @@ echo "<h1>";
 echo "</h1>";
 
 //given a year arg, returns the current century. ceil() rounds a fraction up.w
-function getCentury($year) {
-  return ceil($year / 100);
-}
+// function getCentury($year) {
+//   return ceil($year / 100);
+// }
 
-echo "<h1>getCentury:</h1>";
+// echo "<h1>getCentury:</h1>";
 
-print_r(getCentury(1345));
+// print_r(getCentury(1345));
 
-$string = 'aaabaaaa';
+// $string = 'aaabaaaa';
 
-echo strrev($string);
+// echo strrev($string);
 
 require('index.view.php');
+
+echo "<hr>";
+
+$task = [
+  'title' => 'make a commit',
+  'due' => 'today',
+  'assigned_to' => 'me',
+  'completed' => false
+]; 
+
+foreach($task as $header => $val) {
+  echo "<li>$header : $val</li>";
+} 
+
+print_r($task);
 
 

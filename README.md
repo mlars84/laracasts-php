@@ -1,4 +1,4 @@
-# The PHP Practitioner
+# the PHP Practitioner
 
 - [laracast](https://laracasts.com/series/php-for-beginners)
 - Basic Sytnax: opening - <?php
@@ -21,7 +21,7 @@ Resource
 
 ### Constants
   - To create a constant, use the define() function.
-  - A valid constant name starts with a letter or underscore (no $ sign before the constant name).
+  - A valid constant name starts with a letter or underscore (no $ sign before themeoasdf constant name).
   - `define("GREETING", "Welcome to W3Schools.com!");`
   - Constants are automatically global and can be used across the entire script.
 
