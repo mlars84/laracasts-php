@@ -118,6 +118,10 @@ echo "<h1>getCentury:</h1>";
 
 print_r(getCentury(1345));
 
+$string = 'aaabaaaa';
+
+echo strrev($string);
+
 require('index.view.php');
 
 
