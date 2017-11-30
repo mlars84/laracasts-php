@@ -3,17 +3,18 @@
 </div>
 <?php
 
+
   $matt = 'Matt Larson';
   $greeting = 'hello world!';
 
   echo $greeting . ' ' . $matt;
   
   echo "Hello, $matt";
-?>
+
  
-<h3>Car object:</h3>
+echo "<h3>Car object:</h3>";
  
-<?php
+
   class Car {
     function Car() {
         $this->model = "VW";
@@ -25,16 +26,16 @@
 
   // show object properties
   echo $herbie->model;
-?>
-<h2>Constant:</h2>
-<?php
+
+echo "<h2>Constant:</h2>";
+
   //php constant variable:
   define(number, 6);
 
   echo number;
-?>
-<hr>
-<?php
+
+echo "<hr>";
+
   //while loop
   $x = 10; 
   
@@ -76,12 +77,11 @@
 
   
   //<?= is same as <?php echo
-?>
-<h1>
-  <?=
+
+echo "<h1>";
+
     //htmlspecialchars() function converts special characters to HTML entities to help prevent injecting malicious code
-    "Hello, " . htmlspecialchars($_GET['name']); 
-    require 'index.view.php';
+    // "Hello, " . htmlspecialchars($_GET['name']); 
 
     $matthew = [
       'age' => 33,
@@ -99,10 +99,16 @@
       echo "<strong>$feature</strong><li>$val</li>";
     };
     
+    echo "<h3>var_dump:</h3>";
     //print current value of a variable
-    echo '<pre>';
     var_dump($matthew);
-    echo '</pre>';
-  ?>
-</h1>
+
+    echo "<h3>print_r:</h3>";
+    //print as "human readable"
+    print_r($matthew);
+
+echo "</h1>";
+
+require('index.view.php');
+
 
