@@ -109,6 +109,15 @@ echo "<h1>";
 
 echo "</h1>";
 
+//given a year arg, returns the current century. ceil() rounds a fraction up.w
+function getCentury($year) {
+  return ceil($year / 100);
+}
+
+echo "<h1>getCentury:</h1>";
+
+print_r(getCentury(1345));
+
 require('index.view.php');
 
 
