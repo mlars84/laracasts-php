@@ -139,4 +139,9 @@ foreach($task as $header => $val) {
 
 print_r($task);
 
+//ternary operator:
+$var = 5;
+$var_is_greater_than_two = ($var < 2 ? 'true' : 'false');
+echo $var_is_greater_than_two;
+
 

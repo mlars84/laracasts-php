@@ -68,3 +68,18 @@ $person = [
 ];
 ```
 
+### Ternary Operator in PHP
+```
+<?= $task['completed] ? 'Completed' : 'Incomplete'; ?>
+// If $task is completed(boolean true or false) ?/true echo 'Completed', ?/false echo 'Incomplete'
+// Ternary operator logic is the process of using "(condition) ? (true return value) : (false return value)" statements to shorten your if/else structures.
+```
+
+### Visibility 
+
+The visibility of a property, a method or (as of PHP 7.1.0) a constant can be defined by prefixing the declaration with the keywords public, protected or private. Class members declared public can be accessed everywhere. Members declared protected can be accessed only within the class itself and by inheriting and parent classes. Members declared as private may only be accessed by the class that defines the member.
+
+### Property Visibility
+
+Class properties must be defined as public, private, or protected. If declared using var, the property will be defined as public.
+
