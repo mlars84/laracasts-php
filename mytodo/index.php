@@ -46,17 +46,9 @@ require('Task.php');
 require('functions.php');
 
 $pdo = connectToDb();
+$rows = fetchAllTasks($pdo);
 
-//Prepare SQL Query
-$statement = $pdo->prepare('SELECT * FROM todos');
-
-//Execute Query
-$statement->execute();
-
-//fetch DB rows as object
-$rows = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
-
-var_dump($results[0]->description);
+var_dump($rows[0]->description);
 
 require('index.view.php');
 
