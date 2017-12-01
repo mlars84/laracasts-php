@@ -23,25 +23,48 @@ class QueryBuilder
 }
 
 //Contractor example
-class Contractor
-{
-    protected $electrician;
+// class Contractor
+// {
+//     protected $electrician;
 
-    protected $plumber;
+//     protected $plumber;
 
-    protected $designer;
-    //declare dependencies
-    public function __contruct($electrician, $plumber, $designer)
-    {
-        $this->electrician = $electrician;
-        $this->plumber = $plumber;
-        $this->designer = $designer;
-    }
+//     protected $designer;
 
-    public function doSomeWork() 
-    {
-        //electrician
-        //plumber
-        //designer
-    }
-}
+//     //declare dependencies
+//     public function __contruct($electrician, $plumber, $designer)
+//     {
+//         $this->electrician = $electrician;
+//         $this->plumber = $plumber;
+//         $this->designer = $designer;
+//     }
+
+//     public function doSomeWork() 
+//     {
+//         //electrician
+//         //plumber
+//         //designer
+//     }
+// }lass Contractor
+// {
+//     protected $electrician;
+
+//     protected $plumber;
+
+//     protected $designer;
+
+//     //declare dependencies
+//     public function __contruct($electrician, $plumber, $designer)
+//     {
+//         $this->electrician = $electrician;
+//         $this->plumber = $plumber;
+//         $this->designer = $designer;
+//     }
+
+//     public function doSomeWork() 
+//     {
+//         //electrician
+//         //plumber
+//         //designer
+//     }
+// }
