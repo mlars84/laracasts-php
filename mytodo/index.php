@@ -1,5 +1,17 @@
 <?php
 
+$query = require 'bootstrap.php';
+
+require('Task.php');
+
+$rows = $query->selectAll('todos');
+
+// die(var_dump($rows));
+
+require('index.view.php');
+
+
+//PRE-refactor:
 // class Task {
 
 //     public $description;
@@ -41,15 +53,4 @@
 // $tasks[0]->complete();
 
 // die(print_r($stasks));
-
-require('Task.php');
-require('functions.php');
-require('database/Connection.php');
-
-$pdo = Connection::make();
-$rows = fetchAllTasks($pdo);
-
-var_dump($rows[0]->description);
-
-require('index.view.php');
 
