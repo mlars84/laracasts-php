@@ -44,8 +44,9 @@
 
 require('Task.php');
 require('functions.php');
+require('database/Connection.php');
 
-$pdo = connectToDb();
+$pdo = Connection::make();
 $rows = fetchAllTasks($pdo);
 
 var_dump($rows[0]->description);
