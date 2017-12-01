@@ -2,9 +2,8 @@
 
 $query = require 'bootstrap.php';
 
-require('Task.php');
-
-$rows = $query->selectAll('todos');
+//selectAll('NAME_OF_TABLE') and map them into instances of 'Task'($intoClass in QueryBuilder.php)
+$rows = $query->selectAll('todos', 'Task');
 
 // die(var_dump($rows));
 

@@ -9,7 +9,7 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function selectAll()
+    public function selectAll($table, $intoClass)
     {
         //Prepare SQL Query
         $statement = $this->pdo->prepare('SELECT * FROM {$table}');
@@ -18,6 +18,30 @@ class QueryBuilder
         $statement->execute();
     
         //fetch DB rows as object
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetchAll(PDO::FETCH_CLASS, $intoClass);
+    }
+}
+
+//Contractor example
+class Contractor
+{
+    protected $electrician;
+
+    protected $plumber;
+
+    protected $designer;
+    //declare dependencies
+    public function __contruct($electrician, $plumber, $designer)
+    {
+        $this->electrician = $electrician;
+        $this->plumber = $plumber;
+        $this->designer = $designer;
+    }
+
+    public function doSomeWork() 
+    {
+        //electrician
+        //plumber
+        //designer
     }
 }
