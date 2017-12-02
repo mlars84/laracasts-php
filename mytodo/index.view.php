@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h2>Tasks:</h2>
     <ul>
         <?php foreach ($tasks as $task) : ?>
             <li>
