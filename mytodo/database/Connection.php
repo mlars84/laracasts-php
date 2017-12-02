@@ -7,6 +7,7 @@ class Connection
 
         try {
             //sample PDO string new PDO('DBType:host=YOUR_HOST_HERE;dbname=DB_NAME', 'USERNAME', 'PASSWORD');
+            // return new PDO('mysql:host=127.0.0.1;dbname=mytodos', 'root', 'root');
             return new PDO(
                 $config['connection'].';dbname='.$config['name'],
                 $config['username'],

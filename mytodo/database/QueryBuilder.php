@@ -11,8 +11,10 @@ class QueryBuilder
 
     public function selectAll($table)
     {
+        $query = "SELECT * FROM $table";
+        // die(var_dump($query));
         //Prepare SQL Query
-        $statement = $this->pdo->prepare('SELECT * FROM {$table}');
+        $statement = $this->pdo->prepare($query);
     
         //Execute Query
         $statement->execute();
