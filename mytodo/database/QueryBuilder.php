@@ -9,7 +9,7 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table, $intoClass)
+    public function selectAll($table)
     {
         //Prepare SQL Query
         $statement = $this->pdo->prepare('SELECT * FROM {$table}');
@@ -18,7 +18,7 @@ class QueryBuilder
         $statement->execute();
     
         //fetch DB rows as object
-        return $statement->fetchAll(PDO::FETCH_CLASS, $intoClass);
+        return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 }
 
