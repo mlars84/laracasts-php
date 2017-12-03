@@ -1,0 +1,15 @@
+html, body {
+    background: lightpink;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+    height: 70px;
+}
