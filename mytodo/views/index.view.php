@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/views/about.view.php">About</a></li>
-            <li><a href="/views/contact.view.php">Contact</a></li>
-        </ul>
-    </nav>
+    
+    <?php include 'partials/nav.php'; ?>
+
     <h2>Tasks:</h2>
     <ul>
         <?php foreach ($tasks as $task) : ?>
